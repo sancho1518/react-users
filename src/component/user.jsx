@@ -4,7 +4,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Modal from "react-bootstrap/Modal";
 import EditForm from "./EditFrom";
 
-const user = ({ user, deleteUser, editUser }) => {
+const User = ({ user, deleteUser, editUser }) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
