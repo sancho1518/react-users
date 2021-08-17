@@ -1,4 +1,5 @@
 import React from "react";
+import {connect} from 'react-redux'
 import User from "./User";
 
 const UserList = ({ users, deleteUser, editUser }) => {
@@ -15,5 +16,10 @@ const UserList = ({ users, deleteUser, editUser }) => {
 
   return <div className="user-list">{userList}</div>;
 };
+const mapStateToProsp = (state) => {
+  return{
+    user: state.users,
+  }
+}
 
-export default UserList;
+export default connect(mapStateToProsp)(UserList);
