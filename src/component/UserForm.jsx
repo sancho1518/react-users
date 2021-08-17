@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import './Form.css'
+import { addUser } from "../actions/userActions";
+import {connect} from 'react-redux'
 
 
 
@@ -71,4 +73,7 @@ class UserForm extends Component {
     }
 }
 
-export default UserForm;
+const mapDispatchToProps ={
+    addNewUser: addUser
+}
+export default connect(null,mapDispatchToProps)(UserForm);
