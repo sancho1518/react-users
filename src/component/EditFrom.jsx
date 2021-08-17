@@ -6,7 +6,7 @@ class EditForm extends Component {
        this.state = {
            name: props.user.name,
            email: props.user.email,
-           number: props.user.number,
+           Gen: props.user.gen,
            id: props.user.id
        }
    }
@@ -21,7 +21,7 @@ class EditForm extends Component {
        this.setState({
            name: "",
            email: "",
-           number: "",
+           Gen: "",
        })
        this.props.closeModal();
    } 
@@ -49,11 +49,11 @@ class EditForm extends Component {
                 />
             </div>
             <div className="form-control">
-                <label htmlFor="gen">Number:</label>
+                <label htmlFor="gen">Gen:</label>
                 <input
                     type="number"
-                    name="number"
-                    value={this.state.number}
+                    name="gen"
+                    value={this.state.gen}
                     onChange={this.handleChange}
                 />
             </div>
