@@ -11,7 +11,7 @@ class UserForm extends Component {
             this.state = {
                 name: "",
                 email: "",
-                number: "",
+                gen: "",
             }
         }
     
@@ -25,7 +25,7 @@ class UserForm extends Component {
             this.setState({
                 name: "",
                 email: "",
-                number: "",
+                gen: "",
             })
         }
     
@@ -55,10 +55,10 @@ class UserForm extends Component {
                 </div>
                 <br></br>
                 <div className="form-control">
-                    <label htmlFor="number">Number</label>
+                    <label htmlFor="gen">Gen:</label>
                     <input
                         type="number"
-                        name="number"
+                        name="gen"
                         value={this.state.gen}
                         onChange={this.handleChange}
                     />
