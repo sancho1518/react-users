@@ -50,4 +50,4 @@ const User = ({ user, deleteUser, editUser }) => {
   );
 };
 
-export default user;
+export default User;
