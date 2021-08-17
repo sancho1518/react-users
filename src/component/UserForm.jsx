@@ -11,7 +11,7 @@ class UserForm extends Component {
             this.state = {
                 name: "",
                 email: "",
-                number: ""
+                number: "",
             }
         }
     
@@ -25,7 +25,7 @@ class UserForm extends Component {
             this.setState({
                 name: "",
                 email: "",
-                number: ""
+                number: "",
             })
         }
     
